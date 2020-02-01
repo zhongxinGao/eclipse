@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.controller.UpFile&apos; to &apos;UploadController&apos;&#x0D;&#x0A;- Original project: &apos;SpringMvc&apos;&#x0D;&#x0A;- Original element: &apos;com.controller.UpFile&apos;&#x0D;&#x0A;- Renamed element: &apos;com.controller.UploadController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UpFile&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.controller{UpFile.java[UpFile" matchStrategy="1" name="UploadController" qualified="false" references="true" similarDeclarations="false" stamp="1573010146910" textual="false" version="1.0"/>
+</session>

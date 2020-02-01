@@ -1,0 +1,9 @@
+#Tomcat publish data
+#Thu Jan 09 20:59:01 CST 2020
+org.eclipse.jst.jee.server\:/binary\:G\:\\eclipse\\Go\\SpringMvc\\WebContent\\WEB-INF\\lib\\spring-web-5.1.8.RELEASE-sources.jar=G\:\\Tomcat\\apache-tomcat-9.0.22\\webapps\\SpringMvc\\WEB-INF\\lib\\spring-web-5.1.8.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:how=G\:\\Tomcat\\apache-tomcat-9.0.22\\webapps\\how
+org.eclipse.jst.jee.server\:servlet=G\:\\Tomcat\\apache-tomcat-9.0.22\\webapps\\servlet
+org.eclipse.jst.j2ee.server\:ssm=G\:\\Tomcat\\apache-tomcat-9.0.22\\webapps\\ssm
+org.eclipse.jst.jee.server\:SpringMvc=G\:\\Tomcat\\apache-tomcat-9.0.22\\webapps\\SpringMvc
+org.eclipse.jst.jee.server\:/binary\:G\:\\eclipse\\Go\\SpringMvc\\WebContent\\WEB-INF\\lib\\spring-web-5.1.8.RELEASE.jar=G\:\\Tomcat\\apache-tomcat-9.0.22\\webapps\\SpringMvc\\WEB-INF\\lib\\spring-web-5.1.8.RELEASE.jar
+org.eclipse.jst.jee.server\:runoob=G\:\\Tomcat\\apache-tomcat-9.0.22\\webapps\\runoob

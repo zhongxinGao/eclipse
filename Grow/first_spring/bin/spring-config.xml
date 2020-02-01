@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id = "student" class = "com.spring.www.Student">
+	<property name="name">
+	<value>hello spring</value>
+	</property>
+	</bean>
+	
+	<bean id = "Person" class = "com.text.www.Person">
+	<property name = "name" value = "zhang"></property>
+	<property name = "age" value = "18"></property>
+	</bean>
+	
+	<!-- 配置被代理的对象 -->
+	<bean id = "service" class = "com.aop3.Service">
+	<property name="name" value = "sjt"></property>
+	</bean>
+	
+	<!--配置前置通知-->
+    <bean id="myservice" class="com.aop3.MyService"></bean>
+    <!--配置代理对象-->
+    <bean id="proxyFactoryBean" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!--配置代理接口-->
+        <property name="proxyInterfaces">
+            <list>
+                <value>com.aop3.Service1</value>
+                <value>com.aop3.Service2</value>
+            </list>
+        </property>
+        <!--把通知织入到代理对象-->
+        <property name="interceptorNames">
+            <!--相当于把myMethodBeforeAdvice前置通知和代理对象关联起来-->
+            <value>myService</value>
+        </property>
+        <!--配置被代理对象,可以指定-->
+        <property name="target" ref="service"></property>
+		</bean>
+	
+	
+</beans>

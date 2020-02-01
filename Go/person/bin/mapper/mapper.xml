@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.mapper">
+ <!-- 根据 pid 查询 person 表中的数据
+       id:唯一标识符，此文件中的id值不能重复
+       resultType:返回值类型，一条数据库记录也就对应实体类的一个对象
+       parameterType:参数类型，也就是查询条件的类型
+   -->
+<select id="selectPersonById" resultType="bean.Person" parameterType="int">
+select * from person where pid = #{pid}
+</select>
+
+<!-- 查询person 表所有数据 -->
+<select id="allPerson" resultType="bean.Person" >
+select * from person
+</select>
+
+<!-- 根据id更新数据 -->
+<update id="updatePeronId" parameterType="int">
+update person set pid=#{pid} pname=#{pname} page=#{page} where pid=#{pid}
+</update>
+
+<!-- 向 person 表插入一条数据 -->
+<insert id="insertPerson" parameterType="bean.Person" useGeneratedKeys="true" keyProperty="pid">
+insert into person value(#{pid}, #{pname}, #{page})
+</insert>
+
+<!-- 根据 pid 删除数据 -->
+<delete id="deletePersonById" parameterType="int">
+delete from person where pid=#{pid}
+</delete>
+</mapper>

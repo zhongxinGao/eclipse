@@ -1,0 +1,16 @@
+package com.data;
+
+public class Text {
+	public static void main(String[] args) {
+	double a = Math.pow(0.99, 365);
+	double b = Math.pow(1.0, 365);
+	double c = Math.pow(1.01, 365);
+	double d = Math.pow(1.02, 365);
+	double e = Math.pow(1.03, 365);
+	System.out.println(a);
+	System.out.println(b);
+	System.out.println(c);
+	System.out.println(d);
+	System.out.println(e);
+}
+}

@@ -1,0 +1,16 @@
+package com.data;
+
+public class Test {
+	public static void main(String[] args) {
+		double a = Math.pow(0.99, 365);
+		double b = Math.pow(1.0, 365);
+		double c = Math.pow(1.1, 365);
+		double d = Math.pow(1.2, 365.0);
+		
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		
+	}
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+  
+  <!-- mapper：根标签      namespace：命名空间 保证唯一 -->
+ <mapper namespace="cn.swjd.mapper.StudentMapper"> 
+ 
+ 	<!-- id时sql唯一标识符 用来告诉mysbatis执行那个sql -->
+ 	<!-- 用id查询 -->
+  <select id="findStudentById" parameterType="Integer" resultType="cn.swjd.entries.Student">
+      select * from student where st_no= #{st_no}  
+      </select> 
+      
+      <!-- 查询 -->
+      <select id="SelectStudent" parameterType="Integer" resultType = "cn.swjd.entries.Student">
+      select * from student
+      </select>
+      <!-- 增加 -->
+      <insert id="InsertStudent" parameterType="cn.swjd.entries.Student">
+      insert into student (st_no, st_name, sex, tel, address)
+      value (#{st_no}, #{st_name}, #{sex}, #{tel}, #{address})
+      </insert>
+      <!-- 删除 -->
+      <delete id="DeleteStudent" parameterType="cn.swjd.entries.Student">
+      delete from student where st_no = #{st_no}
+      </delete>
+      <!-- 修改 -->
+      <update id="UpdateStudent" parameterType="cn.swjd.entries.Student">
+      update student set st_name = #{st_name} where st_no = #{st_no}
+      </update>
+ </mapper>

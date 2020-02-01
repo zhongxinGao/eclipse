@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.collection.New66&apos; to &apos;New6&apos;&#x0D;&#x0A;- Original project: &apos;grow&apos;&#x0D;&#x0A;- Original element: &apos;com.collection.New66&apos;&#x0D;&#x0A;- Renamed element: &apos;com.collection.New6&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;New66&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.collection{New66.java[New66" matchStrategy="1" name="New6" qualified="false" references="true" similarDeclarations="false" stamp="1574317599581" textual="false" version="1.0"/>
+</session>

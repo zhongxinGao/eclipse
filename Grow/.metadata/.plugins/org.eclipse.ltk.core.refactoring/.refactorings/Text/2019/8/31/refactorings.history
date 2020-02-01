@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.sxt.www.IO01&apos; to &apos;Net01&apos;&#x0D;&#x0A;- Original project: &apos;Text&apos;&#x0D;&#x0A;- Original element: &apos;com.sxt.www.IO01&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sxt.www.Net01&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IO01&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.sxt.www{IO01.java[IO01" matchStrategy="1" name="Net01" qualified="false" references="true" similarDeclarations="false" stamp="1564643453433" textual="false" version="1.0"/>
+</session>
